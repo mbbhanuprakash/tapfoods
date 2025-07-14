@@ -1,5 +1,5 @@
 🍽️ TapFood - Online Food Ordering Web App (JSP + Servlets)
-TapFood is a JSP-based web application for online food ordering, built with Java Servlets, JDBC, and MySQL. It allows users to browse restaurants, view menus, manage a cart with real-time AJAX updates, and place orders.
+TapFood is a JSP-based web application for online food ordering, built using Java Servlets, JDBC, and MySQL. It allows users to browse restaurants, view dynamic menus, manage a real-time cart with AJAX, and place or track orders.
 
 🚀 Features
 👤 User Registration & Login
@@ -8,11 +8,11 @@ TapFood is a JSP-based web application for online food ordering, built with Java
 
 🛒 Add to Cart, Increase/Decrease Quantity (AJAX-powered)
 
-💰 Dynamic Cart with Total Amount
+💰 Dynamic Cart with Total Price Calculation
 
-✅ Order Confirmation & History Tracking
+✅ Order Confirmation & Order History
 
-📷 Default fallback for missing food images
+📷 Fallback Image Support for missing menu photos
 
 ⚙️ Tech Stack
 Frontend: JSP, HTML, CSS, JavaScript (AJAX)
@@ -23,7 +23,7 @@ Database: MySQL
 
 Server: Apache Tomcat
 
-📁 Structure
+📁 Project Structure
 graphql
 Copy
 Edit
@@ -34,18 +34,17 @@ src/
 
 WebContent/
  ├── *.jsp               # All JSP pages (index, menu, cart, etc.)
- └── images/             # Static images (with fallback image)
+ └── images/             # Static images (with fallback)
 🛠️ Setup Instructions
-Clone the repo and import as a Dynamic Web Project in Eclipse/IntelliJ.
+Clone the repo and import as a Dynamic Web Project in Eclipse or IntelliJ.
 
-Create a MySQL DB named foodapp, and import your schema/data.
+Create a MySQL database named foodapp and import your schema/data.
 
-Update DBUtil.java with your DB credentials.
+Update DBUtil.java with your local DB credentials.
 
-Add dish images to WebContent/images/.
+Place dish images in WebContent/images/.
 
-Deploy to Apache Tomcat and run index.jsp.
+Deploy the project to Apache Tomcat and run index.jsp.
 
 👨‍💻 Author
 Bhanu Prakash
-
